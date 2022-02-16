@@ -2,7 +2,7 @@ const statusp = document.querySelector("#status");
 const connectBtn = document.querySelector('#connectBtn');
 const checkoutBtn = document.querySelector('#checkoutBtn');
 //const connectBtnHeader = document.querySelector('#connectBtnHeader');
-const pricePerNFT = 0.2;
+const pricePerNFT = 0.16;
 
 /** input number spinner
  */
