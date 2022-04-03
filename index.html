@@ -174,53 +174,45 @@
           <div class="half-div sticky-on-tablet" style="padding-top:30px; text-align: center; display: block;">
             <h2 class="hero-text small-header left" style="color:#ffffff; display: flex; justify-content: center">
             MINT YOUR APE</h2>
-<div class="p-5">
-            <div class="">
-               <div class="text-center space-y-4 md:space-y-8">
-                  <p class="tracking-wider"><span id="nft_left"></span>/2100 minted</p>
-                  <div id="spinner" class="spinner" style="color: white; animation: none;">
-                     <p class="" style="margin-bottom: 10px;">
-                        Total: <span id="totalETH" style="">0.1</span> ETH
-                     </p>
-
-                     <button type="button" class="btn-minus" style="background: white;
-                              position: relative;
-                              color: #445c7f;
-                              font-weight: 700;
-                              text-align: center;
-                              letter-spacing: 2px;
-                              background-position: 0 -15;
-                              padding:7px 20px;
-                              border: 0px solid black;
-                              border-radius: 88px;font-size: 20px;margin-right: 10px;">-</button>
-                     <input type="text" value="1" data-ruler="quantity" id="totalNFT" style="border: 0px solid black;
-                                    text-align: center;
-                                    background: white;color: #445c7f; padding-top:5px; padding-bottom: 5px;
-                                    border-radius: 50px;
-                                    width: 200px;line-height: 1.5;font-size: 20px;">
-                     <button type="button" class="btn-plus" style="background: white;
-                              position: relative;
-                              color: #445c7f;font-weight: 700;
-                              text-align: center;
-                              letter-spacing: 2px;
-                              background-position: 0 -15;
-                              padding:7px 20px;
-                              border: 0px solid black;
-                              border-radius: 88px;font-size: 20px;margin-left:10px;
-                              ">+</button>
-                  </div>
-                  <p class="tracking-wider" id="status">Please Connect to your Wallet before Minting.</p>
-                  <div class="flex items-center justify-center text-base md:text-xl space-x-2">
-                     <a class="bg-white btn text-sea-600" id="connectBtn" style="cursor: pointer;">
-                        Connect Wallet
-                     </a>
-                     <a class="bg-white btn text-sea-600" id="checkoutBtn" style="cursor: pointer; display: none;">
-                        Mint
-                     </a>
-                  </div>
-               </div>
+            <p style="color:#ffffff;margin-bottom: 10px;margin-top:25px; padding-bottom: 0px; font-family:Spblunt, sans-serif">
+               NFTs Minted: <span id="nft_left" style="color:#ffffff; font-family:Spblunt, sans-serif"></span>  / 2100
+            </p>
+            <div id="spinner" class="spinner" style="font-size: 16px; animation: none;">
+               <p class="" style="color:#ffffff;padding-bottom:0px;margin-bottom: 10px;font-size: 16px;">
+                  <span><b>Total:</b><span> <b><span id="totalETH" style="color:#ffffff;font-family:Spblunt, sans-serif">0.1</span> ETH </b> 
+               </span></span></p>
+               <button type="button" class="btn-minus" style="background: white;
+                  position: relative;
+                  color: #4f2d52;font-weight: 700;
+                  text-align: center;
+                  letter-spacing: 2px;
+                  background-position: 0 -15;
+                  padding:7px 20px;
+                  border: 0px solid #4f2d52;
+                  border-radius: 10px;font-size: 14px; width:50px;">-</button>
+               <input type="text" value="1" data-ruler="quantity" id="totalNFT" style="border: 1px solid #4f2d52;
+                  text-align: center;
+                  background: #ffffff;color: #000000;
+                  border-radius: 16px;
+                  width: 200px;line-height: 1.5;font-size: 20px;">
+               <button type="button" class="btn-plus" style="background: #ffffff;
+                  position: relative;
+                  color: #000000;font-weight: 700;
+                  text-align: center;
+                  letter-spacing: 2px;
+                  background-position: 0 -15;
+                  padding:7px 20px;
+                  border: 0px solid #4f2d52;
+                  border-radius: 10px;font-size: 20px; width: 50px;
+                  
+                  ">+</button>     
             </div>
-         </div>
+            <p style="color:#ffffff;margin-top: 10px;font-size: 16px; font-family:Spblunt, sans-serif;"><span class="txt" id="status">Please Connect to your Wallet before Minting</span></p>
+            <div class="flex items-center justify-center text-base md:text-xl space-x-2">
+            <a id="connectBtn" class="btn" style="color:#ffffff;margin-top: 14px; margin-bottom: 20px; width:160px;background-image: linear-gradient(90deg, #007ea5, #d2b000); border-radius: 8px;padding: 16px 24px; cursor: pointer; transition: 0.1s ease-out; text-decoration: none; text-align: center; font-family:Spblunt, sans-serif; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px;">
+            CONNECT</a>
+            <a class="btn" style="color:#ffffff; margin-top: 14px; margin-bottom: 20px; width:160px;background-image: linear-gradient(90deg, #007ea5, #d2b000); border-radius: 8px;padding: 16px 24px; cursor: pointer; transition: 0.1s ease-out; text-decoration: none; text-align: center; font-family:Spblunt, sans-serif; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; display: block;" id="checkoutBtn">MINT</a>
+            </div>
          </div>
         </div>
       </div>
