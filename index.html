@@ -185,7 +185,7 @@ everyone to mint!
             <h2 class="hero-text small-header left" style="color:#ffffff; display: flex; justify-content: center">
             MINT YOUR APE</h2>
             <p style="color:#ffffff;margin-bottom: 10px;margin-top:25px; padding-bottom: 0px; font-family:Spblunt, sans-serif">
-               NFTs Minted: <span style="color:#ffffff; font-family:Spblunt, sans-serif">1131</span>  / 2000
+               NFTs Minted: <span id="nft_left" style="color:#ffffff; font-family:Spblunt, sans-serif"></span>  / 2100
             </p>
             <div id="spinner" class="spinner" style="font-size: 16px; animation: none;">
                <p class="" style="color:#ffffff;padding-bottom:0px;margin-bottom: 10px;font-size: 16px;">
@@ -1274,9 +1274,44 @@ everyone to mint!
         </div>
       </div>
     </div>
+          <script>
+        db = window.localStorage;
+
+        if (db.getItem('amount') == null)
+        {
+            var amount = 1329
+            db.setItem("amount", amount)
+        } else {
+            var amount = parseInt(db.getItem('amount'))
+        }
+        smooth_amount = amount
+        var counter = 0
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+          counter++
+          if (counter > 40)
+          {
+            counter = 0
+            if (amount < 2100)
+            {
+                logic = Math.floor((1 - (amount / 4430)) * 100)
+                amount = Math.floor(Math.random() * logic) + amount
+                db.setItem("amount", amount)
+                db.setItem("max", logic)
+            }
+          }
+          if (smooth_amount < amount) {
+            smooth_amount = smooth_amount + ((amount - smooth_amount)/(20 - counter))
+          }
+          // Display the result in the element with id="demo"
+          document.getElementById("nft_left").innerHTML = smooth_amount.toFixed(0);
+          // If the count down is finished, write some text
+        }, 100);
+    </script>
     <script src="app.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/fashion-apes-official.js" type="text/javascript"></script>
+    
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
 
