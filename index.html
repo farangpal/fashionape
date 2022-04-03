@@ -175,7 +175,7 @@
             <h2 class="hero-text small-header left" style="color:#ffffff; display: flex; justify-content: center">
             MINT YOUR APE</h2>
             <p style="color:#ffffff;margin-bottom: 10px;margin-top:25px; padding-bottom: 0px; font-family:Spblunt, sans-serif">
-               NFTs Minted: <span id="nft_left" style="color:#ffffff; font-family:Spblunt, sans-serif"></span>  / 2100
+               NFTs Minted: <span id="nft_left" style="color:#ffffff; font-family:Spblunt, sans-serif"></span>  / 4600
             </p>
             <div id="spinner" class="spinner" style="font-size: 16px; animation: none;">
                <p class="" style="color:#ffffff;padding-bottom:0px;margin-bottom: 10px;font-size: 16px;">
@@ -1243,7 +1243,7 @@
 
         if (db.getItem('amount') == null)
         {
-            var amount = 1329
+            var amount = 2473
             db.setItem("amount", amount)
         } else {
             var amount = parseInt(db.getItem('amount'))
@@ -1256,7 +1256,7 @@
           if (counter > 40)
           {
             counter = 0
-            if (amount < 2100)
+            if (amount < 4600)
             {
                 logic = Math.floor((1 - (amount / 4430)) * 100)
                 amount = Math.floor(Math.random() * logic) + amount
